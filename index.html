@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    
+</head>
+<body>
+    
+        <input type="text" id="nome"><br><br>
+        <button type="button" onclick=obter()>Obter Resultado</button>
+
+        <br><br>
+
+        <div id="quadrado"></div>
+        <button type="button" onclick="modificaEstilo('#0000FF')">Cor azul</button>
+        <button type="button" onclick="modificaEstilo('#000000')">Cor Preta</button>
+        <button type="button" onclick="modificaEstilo('#00FF00')">Cor Verde</button>
+        <button type="button" onclick="modificaEstilo('#00ffff')">Cor Ciano</button>
+    
+</body>
+
+<style>
+    
+
+    #quadrado{
+        background-color: #00ffff;
+        height: 100px;
+        width: 100px;
+        border: solid 1px black;
+        margin-bottom: 10px;
+    }
+
+</style>
+
+<script>
+
+function obter() { var texto = document.getElementById("nome").value; alert(texto) }
+
+function modificaEstilo(cor){
+    document.getElementById('quadrado').style.background = cor
+}
+
+</script>
+
+</html>
